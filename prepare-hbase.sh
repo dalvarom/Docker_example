@@ -14,3 +14,4 @@ cd /opt
 RUN mkdir /traza/4
 curl -SL http://archive.apache.org/dist/hbase/$HBASE_VERSION/hbase-$HBASE_VERSION-bin.tar.gz | tar -x -z && mv hbase-${HBASE_VERSION} hbase
 RUN mkdir /traza/5
+RUN echo "1" > 1
