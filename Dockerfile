@@ -1,7 +1,8 @@
 FROM ubuntu
 MAINTAINER David Alvaro <dalvarom@gmail.com>
 
-RUN echo "1" > 1
+run mkdir "/tmp/1"
+RUN echo "1" > /tmp/1/1.txt
 
 COPY *.sh /build/
 
