@@ -1,6 +1,9 @@
 FROM ubuntu
 MAINTAINER David Alvaro <dalvarom@gmail.com>
 
+RUN mkdir /build
+RUN mkdir /traza
+
 COPY *.sh /build/
 
 ENV HBASE_VERSION = 1.1.4
